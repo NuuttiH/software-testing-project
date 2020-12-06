@@ -21,10 +21,10 @@ describe("toString: Convert a value to string", () => {
    it("nothing changes with a string", () =>{
       expect(toString('fred')).to.eql("fred")
    });
-   // This test does should not really pass, as there is a mistake in the tested files.
+   // This test does should not pass, as there is a mistake in the tested files.
    // toString(null) results in 'null', which, while reasonable, differs from suggested
    // outcome in the file (which is '')
    it("able to handle null value", () =>{
-      expect(toString(null)).to.eql('null')
+      expect(toString(null)).to.eql('')
    });
   })
